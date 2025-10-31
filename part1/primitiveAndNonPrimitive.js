@@ -1,6 +1,6 @@
 // Primitive vs Non-Primitive Data Types in JavaScript
 
-// ✅ Primitive Data Types
+// ✅ Primitive Data Types   good t o go
 let name = "Sanjay"; // String
 let age = 21; // Number
 let isStudent = true; // Boolean
