@@ -45,3 +45,5 @@ obj1.value = 200;
 console.log("\nCopy by Reference:");
 console.log("obj1.value =", obj1.value);
 console.log("obj2.value =", obj2.value); // 200 (same reference)
+
+let userName = "Sanjay";
