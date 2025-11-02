@@ -11,7 +11,7 @@ console.log('a / b =', a / b);
 console.log('a % b =', a % b);
 console.log('2 ** 3 =', 2 ** 3);
 
-// Assignment Operators
+// Assignment Operators good to go
 let x = 10;
 x += 5;
 console.log('\nAssignment Operators:');
