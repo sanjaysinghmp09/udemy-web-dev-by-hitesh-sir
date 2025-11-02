@@ -3,12 +3,12 @@
 // console.log(typeof userName);
 
 let userName = {
-    name : "Sanjay",
+    "last name" : "Sanjay",
     age : 21
 };
-console.log(userName.name)
+console.log(userName['last name'])
 console.log(typeof userName);
 
-userName.lastName = "Solanki";
-console.log(userName.name + " " + userName.lastName);
+userName['last name'] = "Solanki";
+console.log(userName['last name'] + " " + userName['last name']);
 
