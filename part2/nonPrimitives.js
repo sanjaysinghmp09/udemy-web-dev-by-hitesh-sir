@@ -9,3 +9,6 @@ let userName = {
 console.log(userName.name)
 console.log(typeof userName);
 
+userName.lastName = "Solanki";
+console.log(userName.name + " " + userName.lastName);
+
