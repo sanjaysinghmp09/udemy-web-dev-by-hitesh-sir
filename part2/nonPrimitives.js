@@ -1,6 +1,8 @@
 // let userName = {};
 // console.log(userName)
-// console.log(typeof userName);
+// console.log(typeof userName);jay dev baba
+var userDigitalName = "SanjuBaba"
+console.log(userDigitalName[0]);
 
 let userName = {
     "last name" : "Sanjay",
