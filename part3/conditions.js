@@ -40,7 +40,7 @@ let arr1 = ["Ram", "Shyam", "Hari"];
 console.log(arr1)
 
 console.log(arr1.length)
-
+// working with array 
 if (arr1.length == 0 ) {
     console.log("Array is empty");
 }else {
