@@ -35,11 +35,13 @@ if (typeof bankBalance === 'number') {
 }
 */
 
-let arr =  [1 ,2 ,3 ];
+let arr1 = ["Ram", "Shyam", "Hari"];
 
-console.log(arr.length);
+console.log(arr1)
 
-if (arr.length == 0 ) {
+console.log(arr1.length)
+
+if (arr1.length == 0 ) {
     console.log("Array is empty");
 }else {
     console.log("Array is not empty");
