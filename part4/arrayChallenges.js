@@ -12,3 +12,14 @@ let cities = ["London", "Tokyo", "New York"];
 let favoriteCity = cities[2];
 console.log("My favorite city is: " + favoriteCity);
 
+
+// challenge -3 Answer
+
+let teaTypes = [ "herbel tea" , "white tea" , "masala chai"]
+
+teaTypes[1] = "jasmine tea";
+
+console.log(teaTypes);
+
+
+
