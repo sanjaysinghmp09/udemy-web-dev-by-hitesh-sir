@@ -21,5 +21,8 @@ teaTypes[1] = "jasmine tea";
 
 console.log(teaTypes);
 
+// challenge -4 Answer
 
+let citiesVisited = ["Mumbai", "Sydney" ];
 
+citiesVisited.push('Berlin');
