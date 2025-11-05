@@ -28,3 +28,11 @@ let citiesVisited = ["Mumbai", "Sydney" ];
 citiesVisited.push('Berlin');
 
 console.log(citiesVisited);
+
+// challenge -5 Answer
+
+let teaOrders = [ "chai" , "iced tea" , "matcha" , "earl grey"]
+teaOrders.pop("earl grey");
+console.log(teaOrders);
+
+// challenge -6 Answer
