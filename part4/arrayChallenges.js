@@ -89,3 +89,9 @@ let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
 
 let isLondonInList = cityBucketList.includes("London");
 
+let studentCoaching = ["Sanjay Solanki"]
+let newStudent = ["Anushka"]
+
+let allStudent = studentCoaching.concat(newStudent);
+
+console.log(allStudent);
