@@ -8,3 +8,11 @@ while (i <= 5) {
     i++ ;
 }
 console.log(sum) ;
+
+// Basic while loop: count 0..4
+let i1 = 0 ;
+
+while ( i1 <=  10 ) {
+    console.log(i1) ;
+    i1++
+}
