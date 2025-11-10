@@ -1,5 +1,5 @@
+// print added value 1 to 10 
 let sum = 0 ; 
-
 let i = 0 ;
 
 while (i <= 5) {
