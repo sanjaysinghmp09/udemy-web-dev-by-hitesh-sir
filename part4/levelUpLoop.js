@@ -38,4 +38,24 @@ for (const num of numbers) {
 
    smallNumbers.push(num)
 }
-console.log(smallNumbers)
+// console.log(smallNumbers)
+
+// challenge - 4 
+
+let teass = ["chai" , "green tea" , "herbal tea" , "black tea"]
+
+let preferredTeas = []
+
+for (const tea of teass) {
+
+   if (tea == "herbal tea") {
+
+      continue
+      
+   }
+
+   preferredTeas.push(tea)
+   
+}
+
+console.log(preferredTeas)
