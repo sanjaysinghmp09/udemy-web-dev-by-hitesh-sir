@@ -58,4 +58,14 @@ for (const tea of teass) {
    
 }
 
-console.log(preferredTeas)
+// console.log(preferredTeas)
+
+let citiesPopulation = {
+   "London" : 8900000,
+   "New York" : 8400000,
+   "Paris" : 2200000,
+   "Berlin" : 3500000 
+}  
+
+let cityPopulations = {} 
+console.log(Object.keys(citiesPopulation))
