@@ -1,4 +1,4 @@
-function greet () {
-    console.log("Hey Sanjay !")
+function greet (name) {
+    console.log(`Hey ! ${name}`)
 }
-greet()
+greet("Sanjay")
