@@ -70,8 +70,3 @@ const calculateTotal1 = () =>{
     console.log(3+5)
 }
 calculateTotal1()
-
-function greet2() {
-  console.log("Hello")
-}
-greet2()
