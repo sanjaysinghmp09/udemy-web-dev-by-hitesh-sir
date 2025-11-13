@@ -70,3 +70,4 @@ const calculateTotal1 = () =>{
     console.log(3+5)
 }
 calculateTotal1()
+// ram ram 
