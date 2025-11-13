@@ -71,3 +71,4 @@ const calculateTotal1 = () =>{
 }
 calculateTotal1()
 // ram ram 
+// yesterday i was very busy in my farming work 
