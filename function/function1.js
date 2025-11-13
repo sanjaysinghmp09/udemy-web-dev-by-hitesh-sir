@@ -63,10 +63,15 @@ function createTeaMaker(name) {
 
 let teaMaker = createTeaMaker("hitesh");
 let result = teaMaker("green tea");
-// console.log(result);
+console.log(result);
 
 
 const calculateTotal1 = () =>{
     console.log(3+5)
 }
 calculateTotal1()
+
+function greet2() {
+  console.log("Hello")
+}
+greet2()
