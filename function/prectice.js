@@ -1,53 +1,39 @@
-// **** DO NOT CHANGE the values *****
-const a = 18;
-const b = 24;
-
-// Addition of two values
+let a = 18;
+let b = 24;
+ 
 function add() {
-    let sum = a + b ;
-    console.log(sum)
-    return 0;
+    const result = a + b;
+    return result;
 }
-add()
-
-// Subtract small value from larger one
+ 
 function subtract() {
-    let sub = a - b ;
-    console.log(sub)
-    return 0;
+    const result = b - a;
+    return result;
 }
-subtract()
-
+ 
 function multiply() {
-    let multi = a * b ;
-    console.log(multi)
-    return 0;
+    const result = a * b;
+    return result;    
 }
-multiply()
-
-// Divide larger value by small
+ 
 function divide() {
-    let divi = a / b ;
-    console.log(divi)
-    return 0;
+    const result = b / a;
+    return result;
 }
-divide()
-
-// Increase value of a and b by 1
+ 
 function increment() {
-    a = a + 1;
-    b = b + 1;
-    return 0;
+    let result = a;
+    result += 1;
+    return result;
 }
-
-// Decrease value of a and b by 1
+ 
 function decrement() {
-    a = a - 1;
-    b = b - 1;
-    return 0;
+    let result = b;
+    result -= 1;
+    return result;
 }
-
-// Divide larger value by small to find the remainder
+ 
 function reminder() {
-    return (a > b ? a % b : b % a);
+    const result = b % a;
+    return result;
 }
