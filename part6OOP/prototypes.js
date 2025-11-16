@@ -6,5 +6,17 @@ let asus = {
 };
 let jojoHardware = {}
 
-console.log(`computer` , asus.__proto__ )
+// console.log(`computer` , asus.__proto__ )
+
+let genericCar = {tyres : 4} 
+
+let tesla = {
+    driver : "AutoDriver",
+    sensorsCount : 200
+}
+
+Object.setPrototypeOf(tesla , genericCar)
+console.log(`Tesla` , Object.getPrototypeOf(tesla));
+
+
 
