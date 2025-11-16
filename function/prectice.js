@@ -41,6 +41,7 @@ function reminder() {
  function fullName(fName ,  lName) {
     console.log("Hello Sanjay")
     let udemy = ("Learnig OOP Js") 
+    console.log(udemy)
     
  }
  fullName()
