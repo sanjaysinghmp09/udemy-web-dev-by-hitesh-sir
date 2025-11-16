@@ -37,3 +37,9 @@ function reminder() {
     const result = b % a;
     return result;
 }
+
+ function fullName(fName ,  lName) {
+    console.log("Hello Sanjay")
+    
+ }
+ fullName()
