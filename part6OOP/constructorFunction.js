@@ -28,5 +28,5 @@ function Tea(type){
     this.type = type
 }
 
-let myTea = new Tea ('tulsi or adrak')
+let myTea = new Tea ('tulsi or adrak long')
 console.log(myTea)
