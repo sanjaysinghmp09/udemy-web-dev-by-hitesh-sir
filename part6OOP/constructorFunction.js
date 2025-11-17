@@ -17,6 +17,16 @@ function Person1 (username , password){
 }
 
 let myDB = new Person1("sanjay09" , "123321" )
-console.log(myDB)
+// console.log(myDB)
 let myInfo = new Person("sanjay singh" , "23" )
-console.log(myInfo)
+// console.log(myInfo)
+
+
+// prectice 
+
+function Tea(type){
+    this.type = type
+}
+
+let myTea = new Tea ('tulsi or adrak')
+console.log(myTea)
