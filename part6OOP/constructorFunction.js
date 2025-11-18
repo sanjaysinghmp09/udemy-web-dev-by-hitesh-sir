@@ -37,3 +37,4 @@ function farming (moter , starter) {
 }
 
 let myFarm = new farming ("moter working..." , "Starter Triping")
+console.log(myFarm)
