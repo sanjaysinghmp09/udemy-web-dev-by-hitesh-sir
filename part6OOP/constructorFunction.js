@@ -30,3 +30,10 @@ function Tea(type){
 
 let myTea = new Tea ('tulsi or adrak long')
 console.log(myTea)
+
+function farming (moter , starter) {
+    this.moter = moter ;
+    this.starter = starter ;
+}
+
+let myFarm = new farming ("moter working..." , "Starter Triping")
