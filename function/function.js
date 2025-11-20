@@ -16,3 +16,4 @@ console.log(myCar); // Car { brand: 'BMW', year: 2001 }
 function myLife (fun, work) {
  console.log("Work work work ")
 }
+(myLife)
