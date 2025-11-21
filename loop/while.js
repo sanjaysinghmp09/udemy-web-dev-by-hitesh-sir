@@ -7,3 +7,5 @@ while (i > 0) {
     i-- ;
 }
 console.log(countdown) ;
+
+console.log("Start Counting")
