@@ -12,3 +12,8 @@ function Car(brand, year) {
 const myCar = new Car("BMW", 2001);
 
 console.log(myCar); // Car { brand: 'BMW', year: 2001 }
+
+function myLife (fun, work) {
+ console.log("Work work work ")
+}
+(myLife)
