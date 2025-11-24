@@ -18,5 +18,7 @@ let tesla = {
 Object.setPrototypeOf(tesla , genericCar)
 console.log(`Tesla` , Object.getPrototypeOf(tesla));
 
+// Learn About Prototypal Chain 
+
 
 
