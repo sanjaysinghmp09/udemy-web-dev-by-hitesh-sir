@@ -8,7 +8,9 @@ class BankAccount {
         return this.#balance ;
     }
     getBalance () {
-        return `$ ${this.#balance}`;
+        return `Rs ${this.#balance}`;
     }
 }
+let account = new BankAccount () ; 
 
+console.log(account.getBalance())
