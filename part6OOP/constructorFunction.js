@@ -116,8 +116,8 @@ class Penguin extends Bird {
 
 let bird = new Bird();
 let penguin = new Penguin();
-// console.log(bird.fly());
-// console.log(penguin.fly());
+console.log(bird.fly());
+console.log(penguin.fly());
 
 // static method
 
