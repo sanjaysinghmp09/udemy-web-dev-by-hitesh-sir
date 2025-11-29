@@ -25,5 +25,31 @@ document.getElementById("changeOrder").addEventListener("click" , function () {
 })
 
 // example -4 
+document.getElementById("addNewItem").addEventListener("click" , function () {
+  let newItem = document.createElement("li")
+  newItem.textContent = "Eggs"
 
+  let newItem2  = document.createElement("li")
+  newItem2.textContent = "Paneer" 
 
+  
+  document.getElementById("shoppingList").appendChild(newItem)
+
+  document.getElementById("shoppingList").appendChild(newItem2)
+})
+
+// example - 5 
+
+document.getElementById("removeLastTask").addEventListener("click" , function () {
+  let taskList = document.getElementById("taskList")
+  taskList.lastElementChild.remove()
+})
+
+document.getElementById("undoRemoveLastTask").addEventListener("click" , function () {
+  let newItem = document.createElement("li")
+  newItem.textContent = "Task-1"
+
+  
+  document.getElementById("taskList").appendChild(newItem)
+
+})
