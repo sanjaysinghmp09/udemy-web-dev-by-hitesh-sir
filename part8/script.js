@@ -69,3 +69,16 @@ document
     alert("You are selected :" + event.target.textContent)
   }
 })
+
+// example - 8 form handling
+
+document
+  .getElementById("feedbackForm")
+  .addEventListener("submit" , function (e) {
+    e.preventDefault();
+    let feedback = document.getElementById("feedbackInput").value;
+    console.log(feedback)
+
+    document.getElementById("feedbackDisplay").textContent = `Your feedback is : ${feedback}`
+
+})
