@@ -53,3 +53,9 @@ document.getElementById("undoRemoveLastTask").addEventListener("click" , functio
   document.getElementById("taskList").appendChild(newItem)
 
 })
+
+// EXAMPLE 6
+
+document.getElementById("clickMeButton").addEventListener("click" , function () {
+  
+})
