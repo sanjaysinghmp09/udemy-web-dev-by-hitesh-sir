@@ -57,5 +57,15 @@ document.getElementById("undoRemoveLastTask").addEventListener("click" , functio
 // EXAMPLE 6
 
 document.getElementById("clickMeButton").addEventListener("click" , function () {
-  
+  alert("Hey Sanjay Fuck You 98 times !")
+})
+
+// example - 7
+
+document
+  .getElementById("teaList")
+  .addEventListener("click" , function(event) {
+  if (event.target && event.target.matches(".teaItem")) {
+    alert("You are selected :" + event.target.textContent)
+  }
 })
