@@ -7,9 +7,23 @@ document.getElementById("changeTextButton").addEventListener('click' , () => {
 
 // example -2 
 
-document.getElementById("highlightFirstCity").addEventListener("click" , function () {
+document
+
+    .getElementById("highlightFirstCity")
+    .addEventListener("click" , function () {
 let citiesList = document.getElementById("citiesList");
-console.log(citiesList.firstElementChild.classList)
+citiesList.firstElementChild.classList.add("highlight")
 
 
 })
+
+// example -3 
+
+document.getElementById("changeOrder").addEventListener("click" , function () {
+  let coffeeType = document.getElementById("coffeeType")
+  coffeeType.textContent = "Espresso"
+})
+
+// example -4 
+
+
