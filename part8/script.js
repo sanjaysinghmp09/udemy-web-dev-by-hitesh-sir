@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded" , function () {
   document.getElementById("domStatus").textContent = "Dom fully loaded"
 }) 
 
-// example -10 
+// example -10 full
 
 document.getElementById("toggleHighlight").addEventListener("click" , function() {
  let changeColor =  document.getElementById("descriptionText")
