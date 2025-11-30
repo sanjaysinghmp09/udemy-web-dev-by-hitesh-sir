@@ -82,3 +82,16 @@ document
     document.getElementById("feedbackDisplay").textContent = `Your feedback is : ${feedback}`
 
 })
+
+// example -9
+
+document.addEventListener("DOMContentLoaded" , function () {
+  document.getElementById("domStatus").textContent = "Dom fully loaded"
+}) 
+
+// example -10 
+
+document.getElementById("toggleHighlight").addEventListener("click" , function() {
+ let changeColor =  document.getElementById("descriptionText")
+ changeColor.classList.toggle('highlight')
+})
