@@ -215,7 +215,7 @@ Promise.all([p1, p2, p3]).then((values) => {
 /********************************************************
  * 7. ITERATORS & GENERATORS
  * Iterator → object with next() method
- * Generator → function which pauses using 'yield'
+ * Generator → function which pauses using 'yield' no yield
  ********************************************************/
 
 // Custom Iterator
