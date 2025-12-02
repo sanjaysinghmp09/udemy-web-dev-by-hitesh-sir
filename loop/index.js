@@ -23,3 +23,10 @@ while ( task.length > 0) {
     console.log('processing' , item) ;
 }
 
+let num1 = 3
+let i2 = 0 ;
+while (i < 5) {
+    console.log(i)
+    i++ 
+    
+}
