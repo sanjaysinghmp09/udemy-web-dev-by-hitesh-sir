@@ -6,4 +6,14 @@ document.addEventListener('DOMContentLoaded' , () => {
   const temperatureDisplay = document.getElementById("temperature");
   const descriptionDisplay = document.getElementById("description");
   const errorMessage = document.getElementById("error-message");
+
+  getWeatherBtn.addEventListener("click" , () => {
+    cityInput.value.trim()
+    if(!city) return ;
+
+    
+
+  })
 })
+
+
