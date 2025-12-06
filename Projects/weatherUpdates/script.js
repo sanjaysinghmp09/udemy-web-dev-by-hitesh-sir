@@ -9,13 +9,23 @@ document.addEventListener('DOMContentLoaded' , () => {
 
   const API_KEY = "e91b54ada70640593a66e0490a5a2084"   // env variables
 
-  getWeatherBtn.addEventListener("click" , () => {
+  getWeatherBtn.addEventListener("click" , async() => {
     cityInput.value.trim()
     if(!city) return ;
 
+    // it may throw an error 
+    // sever/db is always in another continant
+
+    try {
+        const weatherData = await fetchWeatherData(city)
+        displayWeatherData(weatherData)
+    } catch {
+        showError()
+    }
+
   })
 
-  function fetchWeatherData(city) {
+  async function fetchWeatherData(city) {
     // gets the data 
   }
 
