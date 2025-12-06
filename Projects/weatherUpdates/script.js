@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
   async function fetchWeatherData(city) {
     // gets the data 
+    const url = `https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}`
   }
 
   function displayWeatherData(weatherData) {
