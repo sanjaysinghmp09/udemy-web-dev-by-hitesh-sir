@@ -57,4 +57,3 @@ document.addEventListener("DOMContentLoaded", () => {
     errorMessage.classList.add("hidden");
   }
 });
-// api is not working prope..
