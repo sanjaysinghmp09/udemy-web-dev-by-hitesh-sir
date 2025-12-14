@@ -58,6 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
       // 3. Update cart UI and total price
 
     }
+    
   });
+  function addToCart(product) {
+      cart.push(product)
+      renderCart()
+  }
+
+  function renderCart() {
+    cartItems.innerHTML = "" ;
+    let totalPrice = 0 ;
+    if (cart.length > 0) {
+      emptyCartMessage.classList.add('hidden')
+      cartTotalMessage.classList.remove('hidden');
+      
+    }else {
+      emptyCartMessage.classList.remove('hidden');
+    }
+  }
 
 });
