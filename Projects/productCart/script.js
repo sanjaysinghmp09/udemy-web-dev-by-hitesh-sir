@@ -1,4 +1,9 @@
+// Wait until the complete HTML document is loaded
 document.addEventListener("DOMContentLoaded", () => {
+
+  // -----------------------------
+  // Product data (static for now)
+  // -----------------------------
   const products = [
     { id: 101, name: "Bronze Pack", price: 29.99 },
     { id: 102, name: "Silver Pack", price: 49.99 },
@@ -7,33 +12,48 @@ document.addEventListener("DOMContentLoaded", () => {
     { id: 105, name: "Diamond Pack", price: 159.99 },
   ];
 
+  // -----------------------------
+  // Cart state
+  // -----------------------------
   const cart = [];
+
+  // -----------------------------
+  // DOM Elements
+  // -----------------------------
   const productList = document.getElementById("product-list");
   const cartItems = document.getElementById("cart-items");
   const emptyCartMessage = document.getElementById("empty-cart");
   const cartTotalMessage = document.getElementById("total-price");
   const checkout = document.getElementById("checkout-btn");
 
+  // -----------------------------
+  // Render product list
+  // -----------------------------
   products.forEach((product) => {
     const productDiv = document.createElement("div");
     productDiv.classList.add("product");
+
+    // Product UI structure
     productDiv.innerHTML = `
-    <span> ${product.name} - $ ${product.price.toFixed(2)} </span>
-    <button data-id="${product.id}">Add to Cart</button>
+      <span>${product.name} - $ ${product.price.toFixed(2)}</span>
+      <button data-id="${product.id}">Add to Cart</button>
     `;
 
     productList.appendChild(productDiv);
   });
 
-
-  productList.addEventListener("click" , (e) => {
+  // -----------------------------
+  // Handle "Add to Cart" clicks
+  // Event delegation used here
+  // -----------------------------
+  productList.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
-      console.log("clicked")
+      console.log("clicked");
+      // Future logic:
+      // 1. Get product id from data-id
+      // 2. Push product to cart
+      // 3. Update cart UI and total price
     }
-  
-  } 
-
-  )
-
+  });
 
 });
