@@ -48,11 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // -----------------------------
   productList.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON") {
-      console.log("clicked");
+      const productId = parseInt(e.target.getAttribute('data-id')) ;
+      const product =  products.find( p => p.id === productId);
+      addToCart(product)
+    
       // Future logic:
       // 1. Get product id from data-id
       // 2. Push product to cart
       // 3. Update cart UI and total price
+
     }
   });
 
