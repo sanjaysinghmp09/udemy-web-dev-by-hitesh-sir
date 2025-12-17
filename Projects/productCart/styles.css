@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -15,69 +15,126 @@ body {
   height: 100vh;
 }
 
+/* Main Card */
 .container {
-  width: 400px;
-  padding: 20px;
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 420px;
+  padding: 25px;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
-h1,
-h2 {
-  margin-bottom: 20px;
-}
-
-#product-list {
-  margin-bottom: 30px;
-}
-
-.product {
-  background-color: #333333;
-  padding: 10px;
+/* Headings */
+h1 {
+  text-align: center;
   margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+
+/* Form */
+#expense-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#expense-name,
+#expense-amount {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+#expense-name:focus,
+#expense-amount:focus {
+  background-color: #333333;
+  box-shadow: 0 0 0 2px #7c4dff;
+}
+
+/* Button */
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7c4dff, #651fff);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 77, 255, 0.5);
+}
+
+/* Expense List */
+#expense-list {
+  list-style: none;
+  margin-top: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+#expense-list li {
+  background-color: #2a2a2a;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease;
 }
 
-.product button {
-  background-color: #6200ea;
-  border: none;
-  padding: 5px 10px;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Scrollbar */
+#expense-list::-webkit-scrollbar {
+  width: 6px;
 }
 
-.product button:hover {
-  background-color: #3700b3;
+#expense-list::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
 }
 
-#cart-items {
-  margin-bottom: 20px;
+/* Total Section */
+#total {
+  margin-top: 20px;
+  padding: 15px;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  border-radius: 12px;
+  text-align: center;
 }
 
-#cart-total {
-  text-align: right;
+#total h3 {
+  font-size: 18px;
+  color: #a5d6a7;
 }
 
-#checkout-btn {
-  background-color: #6200ea;
-  border: none;
-  padding: 10px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#checkout-btn:hover {
-  background-color: #3700b3;
-}
-
-.hidden {
-  display: none;
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
