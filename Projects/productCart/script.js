@@ -5,8 +5,14 @@ const expenseAmountInput = document.getElementById('expense-amount');
 const expenseList = document.getElementById('expense-list'); 
 const totalAmountDisplay = document.getElementById('total-amount'); 
 
-function  msg() {
-    console.log("Just chiil")
+let expenses = [];
+let totalAmount = calculateTotal() ;
+
+expenseForm.addEventListener('submit') {
+    
 }
-msg()
+
+function calculateTotal () {
+
+}
 
