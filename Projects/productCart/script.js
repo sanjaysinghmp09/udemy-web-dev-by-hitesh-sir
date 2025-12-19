@@ -9,10 +9,24 @@ let expenses = [];
 let totalAmount = calculateTotal() ;
 
 expenseForm.addEventListener('submit' , (e) => {
-        e.preventDefault
-}) 
+        e.preventDefault() 
 
-function calculateTotal () {
+        const name = expenseNameInput.value.trim()
+        const amount = parseFloat(expenseAmountInput.value.trim())
 
+        if(name !== "" && !isNaN(amount) && amount > 0){
+            const newExpense = {
+                id:Date.now(),
+                name: name ,
+                amount : amount 
+            }
+            expenses.push(newExpense)
+            saveExpensesTolocal()
+        } 
+}) ;
+
+function calculateTotal () {}
+
+function saveExpensesTolocal() {
+    localStorage.setItem('expenses' , JSON.stringify(expenses) )
 }
-
