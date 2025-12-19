@@ -8,9 +8,9 @@ const totalAmountDisplay = document.getElementById('total-amount');
 let expenses = [];
 let totalAmount = calculateTotal() ;
 
-expenseForm.addEventListener('submit') {
-    
-}
+expenseForm.addEventListener('submit' , (e) => {
+        e.preventDefault
+}) 
 
 function calculateTotal () {
 
