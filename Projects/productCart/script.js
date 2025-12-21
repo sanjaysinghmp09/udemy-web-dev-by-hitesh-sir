@@ -21,7 +21,11 @@ expenseForm.addEventListener('submit' , (e) => {
                 amount : amount 
             }
             expenses.push(newExpense)
-            saveExpensesTolocal()
+            saveExpensesTolocal(); 
+
+            // clear input
+            expenseNameInput.value = "";
+            expenseAmountInput.value = "";
         } 
 }) ;
 
