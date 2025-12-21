@@ -29,7 +29,9 @@ expenseForm.addEventListener('submit' , (e) => {
         } 
 }) ;
 
-function calculateTotal () {}
+function calculateTotal () {
+    return expenses.reduce((sum , expense) => sum + expense.amount , 0)
+}
 
 function saveExpensesTolocal() {
     localStorage.setItem('expenses' , JSON.stringify(expenses) )
