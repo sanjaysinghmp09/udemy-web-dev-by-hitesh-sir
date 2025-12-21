@@ -5,8 +5,10 @@ const expenseAmountInput = document.getElementById('expense-amount');
 const expenseList = document.getElementById('expense-list'); 
 const totalAmountDisplay = document.getElementById('total-amount'); 
 
-let expenses = [];
+let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
 let totalAmount = calculateTotal() ;
+
+renderExpenses()
 
 expenseForm.addEventListener('submit' , (e) => {
         e.preventDefault() 
@@ -22,6 +24,8 @@ expenseForm.addEventListener('submit' , (e) => {
             }
             expenses.push(newExpense)
             saveExpensesTolocal(); 
+            renderExpenses()
+            updateTotal()
 
             // clear input
             expenseNameInput.value = "";
@@ -29,10 +33,27 @@ expenseForm.addEventListener('submit' , (e) => {
         } 
 }) ;
 
+function renderExpenses () {
+    expenseList.innerHTML = ""; 
+    expenses.forEach(expense => {
+        const li = document.createElement('li')
+        li.innerHTML = `
+        ${expense.name} - $${expense.amount}
+        <button data-id="${expense.id}"> </button>
+        `
+        expenseList.appendChild(li)
+    })
+}
+
 function calculateTotal () {
     return expenses.reduce((sum , expense) => sum + expense.amount , 0)
 }
 
 function saveExpensesTolocal() {
     localStorage.setItem('expenses' , JSON.stringify(expenses) )
+}
+
+function updateTotal() {
+    totalAmount = calculateTotal() ;
+    totalAmountDisplay.textContent = totalAmount.toFixes(2)
 }
