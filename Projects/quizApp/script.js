@@ -50,11 +50,15 @@ document.addEventListener("DOMContentLoaded", () => {
     questions[currentQuestionIndex].choices.forEach(choice => {
       const li = document.createElement('li')
       li.textContent = choice 
-      li.addEventListener('click')
-
+      li.addEventListener('click' , () => selectAnswer(choice) )
+      choicesList.appendChild(li)
     })
   }
   function selectAnswer(choice) {
-    
+    const correctAnswer = questions[currentQuestionIndex].answer
+    if(choice === correctAnswer ){
+      score++
+    }
+    nextBtn.classList.remove('hidden')
   }
 });
