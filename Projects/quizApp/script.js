@@ -35,6 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
   let score = 0 
 
   startBtn.addEventListener("click" , stratQuiz)
+  nextBtn.addEventListener("click" , () => {
+      currentQuestionIndex++
+      if (currentQuestionIndex < questions.length) {
+        showQuestion()
+      }else {
+        showResult()
+      }
+  } );
+  restartBtn.addEventListener("click" , ()=> {
+    currentQuestionIndex  = 0 ;
+    score = 0 ;
+    questionContainer.classList.add("hidden")
+    stratQuiz();
+
+  })
 
   function stratQuiz() {
     startBtn.classList.add('hidden');
@@ -60,5 +75,11 @@ document.addEventListener("DOMContentLoaded", () => {
       score++
     }
     nextBtn.classList.remove('hidden')
+  }
+
+  function showResult () {
+    questionContainer.classList.add('hidden')
+    resultContainer.classList.remove("hidden")
+    scoreDisplay.textContent = `${score} out of ${questions.length}`
   }
 });
