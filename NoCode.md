@@ -4,7 +4,7 @@
 
 No any code update 
 Laptop is not working properly 
-
+update in javascript main file
 ### 22-11-2025  
 
 i Learn About Constructor Function And error in Constructor Function And new Keyword, and This Keyword
@@ -15,3 +15,6 @@ all set
 
 ### 24-11-2025 
 no any code update from my side 
+
+## no code 
+i am going to indore for infobeans interview
