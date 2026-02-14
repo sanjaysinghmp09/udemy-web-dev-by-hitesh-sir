@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my custom server </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay's Custom Nginx Server</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color:white;
+    }
+
+    .container{
+        text-align:center;
+        padding:40px;
+        width:90%;
+        max-width:600px;
+        backdrop-filter: blur(15px);
+        background: rgba(255,255,255,0.08);
+        border-radius:20px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1{
+        font-size:2.5rem;
+        margin-bottom:20px;
+        background: linear-gradient(to right, #00f260, #0575e6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p{
+        font-size:1.1rem;
+        opacity:0.9;
+        margin-bottom:30px;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:12px 30px;
+        background: linear-gradient(to right, #00f260, #0575e6);
+        border:none;
+        border-radius:30px;
+        color:white;
+        font-weight:600;
+        text-decoration:none;
+        transition:0.3s ease;
+    }
+
+    .btn:hover{
+        transform:scale(1.08);
+        box-shadow:0 5px 20px rgba(0,242,96,0.6);
+    }
+
+    footer{
+        margin-top:20px;
+        font-size:0.9rem;
+        opacity:0.7;
+    }
+
+    @keyframes fadeIn{
+        from{opacity:0; transform:translateY(20px);}
+        to{opacity:1; transform:translateY(0);}
+    }
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to my custom server!</h1>
+
+<div class="container">
+    <h1>🚀 Welcome to My Custom Nginx Server</h1>
+    <p>
+        Server is running successfully.<br>
+        Built & deployed by <strong>Sanjay Singh</strong>
+    </p>
+    <a href="#" class="btn">Explore More</a>
+    <footer>
+        Powered by Nginx ⚡ | Hosted with ❤️
+    </footer>
+</div>
+
 </body>
 </html>
