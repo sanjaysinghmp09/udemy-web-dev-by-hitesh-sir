@@ -4,7 +4,8 @@ const path = require("path")
 
 const port = 3000 ;
 const server = http.createServer((req , res) => {
-   const filePath = path.join(__dirname , req.url === '/' ? "index.html" : "req.url" );
+    
+   const filePath = path.join(__dirname , req.url === '/' ? "index.html" : req.url );
    console.log(filePath)
 
    const extName = String(path.extname(filePath)).toLocaleLowerCase()
@@ -17,7 +18,7 @@ const server = http.createServer((req , res) => {
 
    }
 
-   const contentType = mimeTypes[extName] || "appication/octet-stream";
+   const contentType = mimeTypes[extName] || "application/octet-stream";
 
    fs.readFile(filePath , (err , content) => {
     if (err) {
