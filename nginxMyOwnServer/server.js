@@ -1,7 +1,7 @@
 const http = require("http")
 const fs = require("fs")
 const path = require("path")
-// port number
+// port number 300 here
 const port = 3000 ;
 const server = http.createServer((req , res) => {
     
